@@ -14,10 +14,3 @@ var x = setInterval(function() {
   // 出力する内容
   document.getElementById("countTimer").innerHTML = days + "<span>日</span>" + hours + "<span>HOURS</span>"
   + minutes + "<span>MINUTES</span>" + seconds + "<span>SECONDS</span>";
-
-  // タイマー終了後
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countTimer").innerHTML = "タイマーが終わったよ。";
-  }
-}, 1000);
