@@ -11,4 +11,4 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   // 出力する内容
-  document.getElementById("countTimer").innerHTML = hours + "<span>HOURS</span>" + minutes + "<span>MINUTES</span>" + seconds + "<span>SECONDS</span>";
+  document.getElementById("countTimer").innerHTML = hours + "<span>H</span>" + minutes + "<span>M</span>" + seconds + "<span>S</span>";
