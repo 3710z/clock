@@ -7,8 +7,10 @@ var x = setInterval(function() {
 
   // 日付と時間の計算
   var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   // 出力する内容
-  document.getElementById("countTimer").innerHTML = hours + "<span>H</span>" + minutes + "<span>M</span>" + seconds + "<span>S</span>";
+  document.getElementById("countTimer").innerHTML = days + "<span>日</span>" + hours + "<span>時</span>"
+  + minutes + "<span>分</span>" + seconds + "<span>秒</span>";
