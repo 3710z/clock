@@ -1,5 +1,5 @@
 // タイマーの日付を設定
-var countDownDate = new Date("Feb 5, 2028 12:37:00").getTime();
+var countDownDate = new Date("Aug 5, 2024 02:28:00").getTime();
 // 1秒おきに更新
 var x = setInterval(function() {
   // 今日の日付と時間を取得
@@ -12,8 +12,8 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   // 出力する内容
-  document.getElementById("countTimer").innerHTML = days + "<span>日</span>" + hours + "<span>時</span>"
-  + minutes + "<span>分</span>" + seconds + "<span>秒</span>";
+  document.getElementById("countTimer").innerHTML = days + "<span>日</span>" + hours + "<span>HOURS</span>"
+  + minutes + "<span>MINUTES</span>" + seconds + "<span>SECONDS</span>";
 
   // タイマー終了後
   if (distance < 0) {
