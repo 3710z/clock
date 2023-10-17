@@ -12,8 +12,8 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   // 出力する内容
-  document.getElementById("countTimer").innerHTML = days + "<span>日</span>" + hours + "<span>時</span>"
-  + minutes + "<span>分</span>" + seconds + "<span>秒</span>";
+  document.getElementById("countTimer").innerHTML = days + "<span>D</span>" + hours + "<span>H</span>"
+  + minutes + "<span>M</span>" + seconds + "<span>S</span>";
 
   // タイマー終了後
   if (distance < 0) {
