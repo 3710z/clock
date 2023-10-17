@@ -1,5 +1,5 @@
 // タイマーの日付を設定
-var countDownDate = new Date("Feb 5, 2028 12:37:00").getTime();
+var countDownDate = new Date("Aug 23, 2024 02:28:00").getTime();
 // 1秒おきに更新
 var x = setInterval(function() {
   // 今日の日付と時間を取得
