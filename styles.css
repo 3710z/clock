@@ -20,6 +20,7 @@ p.atdays:after {
 }
 p#countTimer {
     margin: 0;
+    color: #b6ba34;
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: 0.08rem;
